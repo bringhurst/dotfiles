@@ -4,9 +4,11 @@ packages:
     - 'atuin'
     - 'bitwarden-cli'
     - 'chezmoi'
+    - 'emacs'
     - 'git'
     - 'keychain'
     - 'openssh'
+    - 'vim'
     - 'wget'
     casks:
     - 'ghostty'
