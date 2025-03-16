@@ -1,0 +1,14 @@
+packages:
+  darwin:
+    brews:
+    - 'atuin'
+    - 'bitwarden-cli'
+    - 'chezmoi'
+    - 'git'
+    - 'keychain'
+    - 'openssh'
+    - 'wget'
+    casks:
+    - 'ghostty'
+    - 'google-chrome'
+    - 'rectangle'
