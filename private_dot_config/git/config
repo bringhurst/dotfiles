@@ -20,6 +20,9 @@
 
 # Environment specific
 
+[includeIf "gitdir:~/.local/share/chezmoi/"]
+    path = .config/git/config-gh
+
 [includeIf "gitdir:~/code/gh/"]
     path = .config/git/config-gh
 
