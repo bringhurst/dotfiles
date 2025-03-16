@@ -1,0 +1,27 @@
+[diff]
+    tool = vimdiff
+
+[difftool]
+    prompt = false
+
+[merge]
+    ff = true
+    tool = vimdiff
+    conflictstyle = diff3
+
+[mergetool]
+    prompt = false
+
+[pull]
+    rebase = true
+
+[core]
+    commentChar = ";"
+
+# Environment specific
+
+[includeIf "gitdir:~/code/gh/"]
+    path = .config/git/config-gh
+
+[includeIf "gitdir:~/code/li/"]
+     path = .config/git/config-li
