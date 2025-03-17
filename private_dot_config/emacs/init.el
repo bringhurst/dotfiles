@@ -1,20 +1,30 @@
-;; first, declare repositories
-(setq package-archives
-      '(("gnu" . "http://elpa.gnu.org/packages/")
-        ("marmalade" . "http://marmalade-repo.org/packages/")
-        ("melpa" . "http://melpa.org/packages/")))
+;;; Main init file
 
-;; Init the package facility
-(require 'package)
-(package-initialize)
-;; (package-refresh-contents) ;; this line is commented 
-;; since refreshing packages is time-consuming and should be done on demand
+;; Set custom file location
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
-;; Declare packages
-(setq my-packages
-      '(eglot))
+;; Add lisp directory to load path
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
-;; Iterate on packages and install missing ones
-(dolist (pkg my-packages)
-  (unless (package-installed-p pkg)
-    (package-install pkg)))
+;; Load configurations
+(require 'base)       ;; Package management and basic settings
+(require 'ui)         ;; User interface
+(require 'dev-common) ;; Common development settings
+(require 'dev-cpp)    ;; C++ support
+(require 'dev-python) ;; Python support
+(require 'dev-java)   ;; Java support
+(require 'dev-shell)  ;; Shell/Bash support
+
+;; Load custom file if it exists
+(when (file-exists-p custom-file)
+  (load custom-file))
+
+;; Reset GC threshold to reasonable value after startup
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (setq gc-cons-threshold (* 4 1000 1000))  ;; 4MB
+            (message "Emacs loaded in %s with %d garbage collections."
+                     (format "%.2f seconds"
+                             (float-time
+                              (time-subtract after-init-time before-init-time)))
+                     gcs-done)))
