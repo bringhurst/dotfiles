@@ -23,4 +23,5 @@ packages:
       - 'cmake'
       - 'emacs'
       - 'gdb'
+      - 'ninja-build'
       - 'vim'
