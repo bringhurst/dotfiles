@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 # This file is always sourced, for all shells (login, interactive, non-interactive)
 # Best place for environment variables that should be available everywhere

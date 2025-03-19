@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 # zshenv for bash
 source ~/.bashenv
@@ -21,6 +21,6 @@ eval $(keychain \
 
 # Initialize atuin for better shell history
 # Atuin provides a searchable, synchronized shell history with extra features
-eval "$(atuin init zsh)"
+eval "$(atuin init bash)"
 
 . "$HOME/.atuin/bin/env"

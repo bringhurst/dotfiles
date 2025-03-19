@@ -1,16 +1,15 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 # This file is only sourced for login shells
 # Good place for commands that should run once per login session
 # or for setting the PATH from package managers
 
+if [ -f "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+fi
+
 # Initialize Homebrew
 # This adds Homebrew's bin directories to PATH and sets up other Homebrew environment variables
-# It's in .zprofile because:
-# 1. It only needs to run once per login
-# 2. It modifies PATH which should be available to all subshells
-#
-
 if [ -f /opt/homebrew/bin/brew ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
