@@ -20,4 +20,6 @@ eval $(keychain \
 # Atuin provides a searchable, synchronized shell history with extra features
 eval "$(atuin init zsh)"
 
-. "$HOME/.atuin/bin/env"
+if [ -f ~/.atuin/bin/env ]; then
+    . "$HOME/.atuin/bin/env"
+fi
