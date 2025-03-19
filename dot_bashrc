@@ -1,1 +1,26 @@
-eval "$(atuin init bash)"
+#!/usr/bin/env zsh
+
+# zshenv for bash
+source ~/.bashenv
+
+# This file is only sourced for interactive shells
+# Good place for interactive settings, aliases, functions, and prompt customization
+
+# SSH key management with keychain
+# Keychain manages SSH keys and their passphrases across login sessions
+# This loads your SSH keys once per session rather than for each shell
+eval $(keychain \
+    --ignore-missing \
+    -q \
+    --attempts 5 \
+    --eval \
+    --agents ssh \
+    --inherit any \
+    ~/.ssh/keys/gh \
+    ~/.ssh/keys/li)
+
+# Initialize atuin for better shell history
+# Atuin provides a searchable, synchronized shell history with extra features
+eval "$(atuin init zsh)"
+
+. "$HOME/.atuin/bin/env"
