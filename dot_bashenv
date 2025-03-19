@@ -12,6 +12,9 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=vim
 export VISUAL=vim
 
+# I only use bash when ghostty or kitty aren't available
+export TERM=xterm-256color
+
 # Terminal color settings
 # CLICOLOR enables colorized output in macOS Terminal
 export CLICOLOR=1
