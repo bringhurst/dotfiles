@@ -9,15 +9,24 @@ source ~/.bashenv
 # SSH key management with keychain
 # Keychain manages SSH keys and their passphrases across login sessions
 # This loads your SSH keys once per session rather than for each shell
-eval $(keychain \
-    --ignore-missing \
-    -q \
-    --attempts 5 \
-    --eval \
-    --agents ssh \
-    --inherit any \
-    ~/.ssh/keys/gh \
-    ~/.ssh/keys/li)
+#
+#
+if ! command -v keychain 2>&1 >/dev/null
+then
+    eval $(ssh-agent)
+    ssh-add ~/.ssh/keys/gh
+    ssh-add ~/.ssh/keys/li
+else
+    eval $(keychain \
+        --ignore-missing \
+        -q \
+        --attempts 5 \
+        --eval \
+        --agents ssh \
+        --inherit any \
+        ~/.ssh/keys/gh \
+        ~/.ssh/keys/li)
+fi
 
 # Initialize atuin for better shell history
 # Atuin provides a searchable, synchronized shell history with extra features
