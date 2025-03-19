@@ -17,5 +17,10 @@ packages:
     - 'rectangle'
   linux:
     yum:
+      - 'ccache'
+      - 'clang'
+      - 'clang-tools-extra'
+      - 'cmake'
       - 'emacs'
+      - 'gdb'
       - 'vim'
