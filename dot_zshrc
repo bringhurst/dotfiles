@@ -13,8 +13,8 @@ eval $(keychain \
     --eval \
     --agents ssh \
     --inherit any \
-    ~/.ssh/keys/id_ed25519_jon_at_bringhurst_org \
-    ~/.ssh/keys/jbringhu_at_linkedin.com_ssh_key)
+    ~/.ssh/keys/gh \
+    ~/.ssh/keys/li)
 
 # Initialize atuin for better shell history
 # Atuin provides a searchable, synchronized shell history with extra features
