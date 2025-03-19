@@ -15,3 +15,7 @@ packages:
     - 'ghostty'
     - 'google-chrome'
     - 'rectangle'
+  linux:
+    yum:
+      - 'emacs'
+      - 'vim'

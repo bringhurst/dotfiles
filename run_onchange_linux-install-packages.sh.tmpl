@@ -1,0 +1,8 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+{{ range .packages.linux.yum -}}
+sudo yum install -y {{ . | quote }}
+{{ end -}}
+
+{{ end -}}
