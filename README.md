@@ -33,3 +33,10 @@ bw login
 export BW_SESSION=$(bw unlock --raw)
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply bringhurst
 ```
+
+## Reset origin
+```
+chezmoi cd
+git remote rm origin
+git remote add origin git@github.com:bringhurst/dotfiles.git
+```
