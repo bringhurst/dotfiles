@@ -9,6 +9,7 @@ packages:
     - 'keychain'
     - 'llvm'
     - 'openssh'
+    - 'pdsh'
     - 'vim'
     - 'wget'
     casks:
