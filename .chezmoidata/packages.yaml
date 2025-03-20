@@ -10,6 +10,7 @@ packages:
     - 'llvm'
     - 'openssh'
     - 'pdsh'
+    - 'rust'
     - 'vim'
     - 'wget'
     casks:
