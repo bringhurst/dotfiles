@@ -25,6 +25,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 export PATH="~/.atuin/bin:$PATH"
 hash -r
 atuin login
+atuin sync
 ```
 
 ### (Mac) Install bitwarden
