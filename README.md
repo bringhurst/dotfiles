@@ -18,6 +18,9 @@ export PATH="~/bin:$PATH"
 
 ### (Linux) Install atuin
 ```
+# If on debian
+# sudo apt-get install curl
+
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 export PATH="~/.atuin/bin:$PATH"
 hash -r
