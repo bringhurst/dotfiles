@@ -1,8 +1,16 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
-{{ range .packages.linux.yum -}}
+{{   if eq .chezmoi.osRelease.id "debian" }}
+{{     range .packages.linux.apt -}}
+sudo apt-get install -y {{ . | quote }}
+{{     end -}}
+
+{{   else if eq .chezmoi.osRelease.id "mariner2" }}
+{{     range .packages.linux.yum -}}
 sudo yum install -y {{ . | quote }}
-{{ end -}}
+{{     end -}}
+
+{{   end }}
 
 {{ end -}}
