@@ -29,6 +29,7 @@ packages:
       - 'vim'
     apt:
       - 'curl'
+      - 'emacs-nox'
       - 'git'
       - 'keychain'
       - 'unzip'
