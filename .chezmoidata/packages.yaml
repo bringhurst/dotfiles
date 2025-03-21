@@ -27,3 +27,5 @@ packages:
       - 'gdb'
       - 'ninja-build'
       - 'vim'
+    apt:
+      - 'vim-nox'
