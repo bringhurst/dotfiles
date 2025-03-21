@@ -35,3 +35,6 @@ sagent
 # Atuin provides a searchable, synchronized shell history with extra features
 eval "$(atuin init bash)"
 . "$HOME/.atuin/bin/env"
+
+# Setup bash-preexec. See https://github.com/rcaloras/bash-preexec
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
