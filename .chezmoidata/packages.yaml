@@ -28,4 +28,5 @@ packages:
       - 'ninja-build'
       - 'vim'
     apt:
+      - 'unzip'
       - 'vim-nox'
