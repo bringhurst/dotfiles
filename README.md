@@ -6,6 +6,7 @@ Just my personal dotfiles.
 
 ### (Linux) Install bitwarden:
 ```
+mkdir -p ~/bin
 wget -P ~/bin -O ~/bin/bw "https://bitwarden.com/download/?app=cli&platform=linux"
 unzip -o ~/bin/bw -d ~/bin
 chmod 0755 ~/bin/bw
