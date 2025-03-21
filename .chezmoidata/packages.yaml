@@ -33,6 +33,7 @@ packages:
       - 'clang'
       - 'clang-format'
       - 'clang-tools-11'
+      - 'cmake'
       - 'curl'
       - 'emacs-nox'
       - 'gcc'
