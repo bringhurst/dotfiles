@@ -27,6 +27,7 @@ packages:
       - 'ninja-build'
       - 'vim'
     apt:
+      - 'autoconf'
       - 'build-essential'
       - 'ccache'
       - 'clang'
@@ -39,6 +40,7 @@ packages:
       - 'git'
       - 'lcov'
       - 'libstdc++-10-dev'
+      - 'libtool'
       - 'lld'
       - 'llvm'
       - 'ninja-build'
