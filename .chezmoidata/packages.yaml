@@ -45,6 +45,7 @@ packages:
       - 'llvm'
       - 'ninja-build'
       - 'openjdk-17-jdk-headless'
+      - 'pkg-config'
       - 'sudo'
       - 'sysstat'
       - 'tmux'
