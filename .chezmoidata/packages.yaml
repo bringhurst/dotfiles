@@ -11,6 +11,7 @@ packages:
     - 'pdsh'
     - 'rust'
     - 'vim'
+    - 'watch'
     - 'wget'
     casks:
     - 'ghostty'
