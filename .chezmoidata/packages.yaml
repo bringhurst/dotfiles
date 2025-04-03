@@ -1,4 +1,5 @@
-packages: darwin:
+packages:
+  darwin:
     brews:
     - 'atuin'
     - 'bitwarden-cli'
