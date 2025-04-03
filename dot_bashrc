@@ -38,3 +38,12 @@ eval "$(atuin init bash)"
 
 # Setup bash-preexec. See https://github.com/rcaloras/bash-preexec
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+
+# Add local cargo to the path
+case ":${PATH}:" in
+    *:"$HOME/.cargo/bin":*)
+    ;;
+    *)
+    export PATH="$PATH:$HOME/.cargo/bin"
+    ;;
+esac

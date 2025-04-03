@@ -23,3 +23,12 @@ eval "$(atuin init zsh)"
 if [ -f ~/.atuin/bin/env ]; then
     . "$HOME/.atuin/bin/env"
 fi
+
+# Add local cargo to the path
+case ":${PATH}:" in
+    *:"$HOME/.cargo/bin":*)
+    ;;
+    *)
+    export PATH="$PATH:$HOME/.cargo/bin"
+    ;;
+esac
