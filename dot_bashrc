@@ -47,3 +47,6 @@ case ":${PATH}:" in
     export PATH="$PATH:$HOME/.cargo/bin"
     ;;
 esac
+
+# Avoid systemwide vim settings
+alias vim="vim -u ~/.vimrc"
