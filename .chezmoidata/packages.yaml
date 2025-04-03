@@ -1,15 +1,16 @@
-packages:
-  darwin:
+packages: darwin:
     brews:
     - 'atuin'
     - 'bitwarden-cli'
     - 'chezmoi'
+    - 'cmake'
     - 'emacs'
     - 'git'
     - 'llvm'
     - 'openssh'
     - 'pdsh'
     - 'rust'
+    - 'tmux-xpanes'
     - 'vim'
     - 'watch'
     - 'wget'
