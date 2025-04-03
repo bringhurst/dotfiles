@@ -28,6 +28,7 @@ packages:
       - 'emacs'
       - 'gdb'
       - 'ninja-build'
+      - 'tmux'
       - 'vim'
     apt:
       - 'autoconf'
