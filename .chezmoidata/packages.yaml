@@ -2,6 +2,7 @@ packages:
   darwin:
     brews:
     - 'atuin'
+    - 'bash'
     - 'bitwarden-cli'
     - 'chezmoi'
     - 'cmake'
@@ -20,7 +21,11 @@ packages:
     casks:
     - 'ghostty'
     - 'google-chrome'
+    - 'google-drive'
+    - 'ina'
     - 'rectangle'
+    - 'wireshark'
+    - 'zoom'
   linux:
     yum:
       - 'ccache'
