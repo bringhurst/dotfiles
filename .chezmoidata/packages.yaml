@@ -6,7 +6,6 @@ packages:
     - 'bitwarden-cli'
     - 'chezmoi'
     - 'cmake'
-    - 'dozer'
     - 'emacs'
     - 'gcc'
     - 'gdb'
@@ -20,6 +19,7 @@ packages:
     - 'watch'
     - 'wget'
     casks:
+    - 'dozer'
     - 'ghostty'
     - 'google-chrome'
     - 'google-drive'
