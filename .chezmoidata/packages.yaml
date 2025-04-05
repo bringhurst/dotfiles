@@ -6,6 +6,7 @@ packages:
     - 'bitwarden-cli'
     - 'chezmoi'
     - 'cmake'
+    - 'dozer'
     - 'emacs'
     - 'gcc'
     - 'gdb'
