@@ -23,7 +23,7 @@ packages:
     - 'ghostty'
     - 'google-chrome'
     - 'google-drive'
-    - 'ina'
+    - 'iina'
     - 'rectangle'
     - 'wireshark'
     - 'zoom'
