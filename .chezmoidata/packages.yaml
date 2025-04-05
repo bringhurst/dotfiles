@@ -6,6 +6,8 @@ packages:
     - 'chezmoi'
     - 'cmake'
     - 'emacs'
+    - 'gcc'
+    - 'gdb'
     - 'git'
     - 'llvm'
     - 'openssh'
