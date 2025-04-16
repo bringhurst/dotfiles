@@ -10,6 +10,7 @@ packages:
     - 'gcc'
     - 'gdb'
     - 'git'
+    - 'hugo'
     - 'llvm'
     - 'openssh'
     - 'pdsh'
