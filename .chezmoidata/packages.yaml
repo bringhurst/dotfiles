@@ -27,7 +27,6 @@ packages:
     - 'jetbrains-toolbox'
     - 'rectangle'
     - 'wireshark'
-    - 'zoom'
   linux:
     yum:
       - 'ccache'
