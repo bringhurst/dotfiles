@@ -50,3 +50,6 @@ esac
 
 # Avoid systemwide vim settings
 alias vim="vim -u ~/.vimrc"
+
+# Setup direnv
+command -v direnv > /dev/null && eval "$(direnv hook bash)"

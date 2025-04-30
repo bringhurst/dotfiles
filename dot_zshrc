@@ -32,3 +32,6 @@ case ":${PATH}:" in
     export PATH="$PATH:$HOME/.cargo/bin"
     ;;
 esac
+
+# Setup direnv
+command -v direnv > /dev/null && eval "$(direnv hook zsh)"
