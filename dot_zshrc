@@ -9,10 +9,7 @@
 eval $(keychain \
     --ignore-missing \
     -q \
-    --attempts 5 \
     --eval \
-    --agents ssh \
-    --inherit any \
     ~/.ssh/keys/gh \
     ~/.ssh/keys/li)
 
