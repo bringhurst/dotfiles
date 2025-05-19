@@ -21,6 +21,8 @@ packages:
     - 'watch'
     - 'wget'
     casks:
+    - 'discord'
+    - 'espanso'
     - 'ghostty'
     - 'google-chrome'
     - 'google-drive'
