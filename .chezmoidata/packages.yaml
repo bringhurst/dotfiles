@@ -13,6 +13,7 @@ packages:
     - 'git'
     - 'hugo'
     - 'llvm'
+    - 'ollama'
     - 'openssh'
     - 'pdsh'
     - 'rust'
