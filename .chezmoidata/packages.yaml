@@ -31,7 +31,7 @@ packages:
     - 'iina'
     - 'jetbrains-toolbox'
     - 'rectangle'
-    - 'wireshark'
+    - 'wireshark-app'
   linux:
     yum:
       - 'ccache'
