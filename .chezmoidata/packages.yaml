@@ -21,6 +21,7 @@ packages:
     - 'vim'
     - 'watch'
     - 'wget'
+    - 'zig'
     casks:
     - 'discord'
     - 'espanso'
