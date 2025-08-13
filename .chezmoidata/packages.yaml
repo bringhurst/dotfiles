@@ -23,6 +23,7 @@ packages:
     - 'wget'
     - 'zig'
     casks:
+    - 'cursor'
     - 'discord'
     - 'espanso'
     - 'ghostty'
