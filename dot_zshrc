@@ -32,3 +32,8 @@ esac
 
 # Setup direnv
 command -v direnv > /dev/null && eval "$(direnv hook zsh)"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# Add homebrew
+export PATH=/opt/homebrew/bin:$PATH

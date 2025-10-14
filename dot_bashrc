@@ -53,3 +53,5 @@ alias vim="vim -u ~/.vimrc"
 
 # Setup direnv
 command -v direnv > /dev/null && eval "$(direnv hook bash)"
+
+PATH=/opt/homebrew/bin:$PATH
