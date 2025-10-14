@@ -5,6 +5,7 @@ packages:
     - 'autoconf'
     - 'automake'
     - 'bash'
+    - 'bison'
     - 'bitwarden-cli'
     - 'chezmoi'
     - 'cmake'
