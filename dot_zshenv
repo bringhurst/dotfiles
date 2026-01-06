@@ -9,8 +9,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 # Set default editors
 # These are used by many programs to determine which editor to open
-export EDITOR="emacs -nw"
-export VISUAL="emacs -nw"
+export EDITOR="vim"
+export VISUAL="vim"
 
 # Terminal color settings
 # CLICOLOR enables colorized output in macOS Terminal

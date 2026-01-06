@@ -9,8 +9,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 # Set default editors
 # These are used by many programs to determine which editor to open
-export EDITOR="emacs -nw"
-export VISUAL="emacs -nw"
+export EDITOR="vim"
+export VISUAL="vim"
 
 # I only use bash when ghostty or kitty aren't available
 export TERM=xterm-256color
