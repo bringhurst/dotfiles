@@ -13,13 +13,19 @@ eval $(keychain \
     ~/.ssh/keys/gh \
     ~/.ssh/keys/li)
 
-# Initialize atuin for better shell history
+# Initialize atuin for better shell history, except on LinkedIn hosts
 # Atuin provides a searchable, synchronized shell history with extra features
-eval "$(atuin init zsh)"
+case "$(hostname)" in
+    *linkedin.biz|*linkedin.com)
+        ;;
+    *)
+        eval "$(atuin init zsh)"
 
-if [ -f ~/.atuin/bin/env ]; then
-    . "$HOME/.atuin/bin/env"
-fi
+        if [ -f ~/.atuin/bin/env ]; then
+            . "$HOME/.atuin/bin/env"
+        fi
+        ;;
+esac
 
 # Add local cargo to the path
 case ":${PATH}:" in

@@ -31,10 +31,16 @@ sagent() {
 # Run SSH agent management at login
 sagent
 
-# Initialize atuin for better shell history
+# Initialize atuin for better shell history, except on LinkedIn hosts
 # Atuin provides a searchable, synchronized shell history with extra features
-eval "$(atuin init bash)"
-. "$HOME/.atuin/bin/env"
+case "$(hostname)" in
+    *linkedin.biz|*linkedin.com)
+        ;;
+    *)
+        eval "$(atuin init bash)"
+        . "$HOME/.atuin/bin/env"
+        ;;
+esac
 
 # Setup bash-preexec. See https://github.com/rcaloras/bash-preexec
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
