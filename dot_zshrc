@@ -13,20 +13,6 @@ eval $(keychain \
     ~/.ssh/keys/gh \
     ~/.ssh/keys/li)
 
-# Initialize atuin for better shell history, except on LinkedIn hosts
-# Atuin provides a searchable, synchronized shell history with extra features
-case "$(hostname)" in
-    *linkedin.biz|*linkedin.com)
-        ;;
-    *)
-        eval "$(atuin init zsh)"
-
-        if [ -f ~/.atuin/bin/env ]; then
-            . "$HOME/.atuin/bin/env"
-        fi
-        ;;
-esac
-
 # Add local cargo to the path
 case ":${PATH}:" in
     *:"$HOME/.cargo/bin":*)
@@ -43,3 +29,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Add homebrew
 export PATH=/opt/homebrew/bin:$PATH
+
+# Configure native history and the host-appropriate search tool after PATH/hooks.
+source "$HOME/.config/shell/history.sh"

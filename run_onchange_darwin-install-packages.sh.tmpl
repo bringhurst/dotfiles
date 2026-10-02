@@ -1,7 +1,14 @@
 {{ if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
+# Match shell initialization: Atuin must not be installed on LinkedIn hosts.
+case "$(hostname)" in
+    *linkedin.biz|*linkedin.com) history_brew=mcfly ;;
+    *) history_brew=atuin ;;
+esac
+
 brew bundle --file=/dev/stdin <<EOF
+brew "$history_brew"
 {{ range .packages.darwin.brews -}}
 brew {{ . | quote }}
 {{ end -}}
